@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmileCare Dental — Healthy Smiles Begin Here</title>
+  <meta name="description" content="SmileCare Dental is a premium modern dental clinic offering general, cosmetic, and orthodontic care. Book your appointment today." />
+  <meta name="theme-color" content="#1E88E5" />
+
+  <meta property="og:title" content="SmileCare Dental — Healthy Smiles Begin Here" />
+  <meta property="og:description" content="SmileCare Dental is a premium modern dental clinic offering general, cosmetic, and orthodontic care. Book your appointment today." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-cover.jpg" />
+
+  <link rel="icon" type="image/png" href="assets/icons/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-wrap">
+      <div class="loader-tooth"></div>
+      <span class="loader-label">SmileCare Dental</span>
+    </div>
+  </div>
+
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom" id="mainNavbar" aria-label="Primary navigation">
+      <div class="container">
+        <a class="navbar-brand-custom" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C9.5 2 7.6 3.2 6.6 4.6C5.7 5.9 5.4 7.5 5.6 9.3C5.8 11.3 6.5 13.6 7.1 15.6C7.6 17.2 8 18.6 8.5 19.5C8.9 20.3 9.5 21 10.4 21C11.3 21 11.7 20.2 12 19.3C12.3 20.2 12.7 21 13.6 21C14.5 21 15.1 20.3 15.5 19.5C16 18.6 16.4 17.2 16.9 15.6C17.5 13.6 18.2 11.3 18.4 9.3C18.6 7.5 18.3 5.9 17.4 4.6C16.4 3.2 14.5 2 12 2Z" fill="currentColor"/></svg>
+          </span>
+          SmileCare <span style="color:var(--color-primary); margin-left:4px;">Dental</span>
+        </a>
+
+        <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-collapse-custom" id="navbarContent">
+          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link nav-link-custom active" href="index.html" aria-current="page">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <button class="theme-toggle-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <button class="btn btn-primary-solid btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+              Book Appointment
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+<section aria-label="Introduction" class="hero" id="home">
+      <div aria-label="Smiling patient at a dental clinic" class="hero-bg-image" role="img" style="background-image:url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&amp;fit=crop&amp;w=1600&amp;q=70');"></div>
+      <div class="hero-bg-overlay"></div>
+      <span aria-hidden="true" class="hero-shape s1"></span>
+      <span aria-hidden="true" class="hero-shape s2"></span>
+      <span aria-hidden="true" class="hero-shape s3"></span>
+      <span aria-hidden="true" class="hero-shape s4"></span>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content reveal is-visible">
+              <span class="hero-badge">✦ Trusted by 500+ Happy Patients</span>
+              <h1 class="hero-title">Healthy Smiles<span class="accent-line">Begin Here</span></h1>
+              <p class="hero-lead">Modern, compassionate dental care built around you — from routine cleanings to complete smile transformations, delivered by a specialist team using the latest technology.</p>
+              <div class="hero-cta-row">
+                <button class="btn btn-primary-solid" data-bs-target="#appointmentModal" data-bs-toggle="modal" type="button">
+                  Book Appointment
+                </button>
+                <a class="btn btn-outline-brand" href="services.html" style="background:rgba(255,255,255,0.12); color:#fff; border-color:rgba(255,255,255,0.4);">
+                  View Services
+                </a>
+              </div>
+              <div class="hero-mini-stats">
+                <div>
+                  <div class="mini-stat-num">15+</div>
+                  <div class="mini-stat-label">Years Experience</div>
+                </div>
+                <div>
+                  <div class="mini-stat-num">98%</div>
+                  <div class="mini-stat-label">Satisfaction</div>
+                </div>
+                <div>
+                  <div class="mini-stat-num">12</div>
+                  <div class="mini-stat-label">Specialists</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-visual reveal is-visible reveal-delay-2">
+              <div class="hero-visual-frame">
+                <img alt="Dentist examining a patient's smile in a modern clinic" loading="eager" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;w=900&amp;q=75" width="900" height="1125" onerror="this.onerror=null;this.src='assets/images/image-fallback.svg';"/>
+              </div>
+              <div class="hero-floating-card card-top">
+                <span aria-hidden="true" class="fc-icon">
+                  <svg fill="none" height="20" viewBox="0 0 24 24" width="20"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"></path></svg>
+                </span>
+                <div>
+                  <div class="fc-title">Appointment Confirmed</div>
+                  <div class="fc-sub">Today, 3:30 PM</div>
+                </div>
+              </div>
+              <div class="hero-floating-card card-bottom">
+                <span aria-hidden="true" class="fc-icon">
+                  <svg fill="none" height="20" viewBox="0 0 24 24" width="20"><path d="M12 21s-7-4.35-9.5-8.5C.6 8.6 2.7 5 6.2 5c2 0 3.3 1 4.8 2.7C12.5 6 13.8 5 15.8 5c3.5 0 5.6 3.6 3.7 7.5C17 16.65 12 21 12 21Z" fill="currentColor"></path></svg>
+                </span>
+                <div>
+                  <div class="fc-title">98% Satisfaction</div>
+                  <div class="fc-sub">Verified patient reviews</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div aria-hidden="true" class="hero-scroll-cue">
+        <span class="mouse"></span>
+        Scroll
+      </div>
+    </section>
+<section aria-label="Clinic statistics" class="stats-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="stat-item reveal reveal-delay-1">
+              <div class="stat-number" data-count-to="500" data-suffix="+">0</div>
+              <div class="stat-label">Happy Patients</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-item reveal reveal-delay-2">
+              <div class="stat-number" data-count-to="15" data-suffix="+">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-item reveal reveal-delay-3">
+              <div class="stat-number" data-count-to="98" data-suffix="%">0</div>
+              <div class="stat-label">Patient Satisfaction</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-item reveal reveal-delay-4">
+              <div class="stat-number" data-count-to="12" data-suffix="">0</div>
+              <div class="stat-label">Dental Specialists</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section aria-label="Patient testimonials" class="bg-soft" style="padding-top:var(--space-10); padding-bottom:var(--space-10);">
+      <div class="container">
+        <div class="section-heading mx-auto text-center reveal">
+          <span class="section-eyebrow">Patient Stories</span>
+          <h2 class="section-title">What Our Patients Say</h2>
+          <p class="section-subtitle">Real feedback from real patients who trusted us with their smiles.</p>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <div class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel" id="testimonialCarousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <div class="testimonial-card">
+                  <div aria-label="5 out of 5 stars" class="testimonial-stars">★★★★★</div>
+                  <p class="testimonial-quote">The team made me feel completely at ease. My teeth whitening results exceeded what I expected, and the whole visit was fast and comfortable.</p>
+                  <div class="testimonial-person">
+                    <img alt="" loading="lazy" src="https://randomuser.me/api/portraits/women/44.jpg" width="96" height="96" onerror="this.onerror=null;this.src='assets/images/image-fallback.svg';"/>
+                    <div class="text-start">
+                      <div class="tp-name">Sarah Johnson</div>
+                      <div class="tp-treatment">Teeth Whitening</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="testimonial-card">
+                  <div aria-label="5 out of 5 stars" class="testimonial-stars">★★★★★</div>
+                  <p class="testimonial-quote">I was nervous about my root canal, but Dr. Bennett explained every step and I felt zero pain. Genuinely the best dental experience I've had.</p>
+                  <div class="testimonial-person">
+                    <img alt="" loading="lazy" src="https://randomuser.me/api/portraits/men/54.jpg" width="96" height="96" onerror="this.onerror=null;this.src='assets/images/image-fallback.svg';"/>
+                    <div class="text-start">
+                      <div class="tp-name">David Kim</div>
+                      <div class="tp-treatment">Root Canal</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="testimonial-card">
+                  <div aria-label="5 out of 5 stars" class="testimonial-stars">★★★★★</div>
+                  <p class="testimonial-quote">My Invisalign journey here was smooth from start to finish. The staff tracked my progress closely and my smile has never looked better.</p>
+                  <div class="testimonial-person">
+                    <img alt="" loading="lazy" src="https://randomuser.me/api/portraits/women/68.jpg" width="96" height="96" onerror="this.onerror=null;this.src='assets/images/image-fallback.svg';"/>
+                    <div class="text-start">
+                      <div class="tp-name">Amelia Torres</div>
+                      <div class="tp-treatment">Clear Aligners</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="testimonial-card">
+                  <div aria-label="5 out of 5 stars" class="testimonial-stars">★★★★★</div>
+                  <p class="testimonial-quote">Getting my implant felt effortless thanks to the clear explanations and gentle approach. Six months later it looks and feels completely natural.</p>
+                  <div class="testimonial-person">
+                    <img alt="" loading="lazy" src="https://randomuser.me/api/portraits/men/75.jpg" width="96" height="96" onerror="this.onerror=null;this.src='assets/images/image-fallback.svg';"/>
+                    <div class="text-start">
+                      <div class="tp-name">James O'Connor</div>
+                      <div class="tp-treatment">Dental Implants</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="testimonial-card">
+                  <div aria-label="5 out of 5 stars" class="testimonial-stars">★★★★★</div>
+                  <p class="testimonial-quote">The clinic is spotless, the booking process online was effortless, and my cleaning appointment started right on time. Highly recommend.</p>
+                  <div class="testimonial-person">
+                    <img alt="" loading="lazy" src="https://randomuser.me/api/portraits/women/21.jpg" width="96" height="96" onerror="this.onerror=null;this.src='assets/images/image-fallback.svg';"/>
+                    <div class="text-start">
+                      <div class="tp-name">Priya Sharma</div>
+                      <div class="tp-treatment">General Cleaning</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="testimonial-card">
+                  <div aria-label="5 out of 5 stars" class="testimonial-stars">★★★★★</div>
+                  <p class="testimonial-quote">My veneers transformed my confidence completely. The design consultation made sure the final result matched exactly what I pictured.</p>
+                  <div class="testimonial-person">
+                    <img alt="" loading="lazy" src="https://randomuser.me/api/portraits/men/86.jpg" width="96" height="96" onerror="this.onerror=null;this.src='assets/images/image-fallback.svg';"/>
+                    <div class="text-start">
+                      <div class="tp-name">Marcus Lee</div>
+                      <div class="tp-treatment">Cosmetic Veneers</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div aria-label="Select testimonial" class="carousel-indicators-custom" id="testimonialIndicators" role="tablist"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-soft" style="padding-top:var(--space-8); padding-bottom:var(--space-8);" aria-label="Call to action">
+      <div class="container">
+        <div class="row align-items-center g-4 justify-content-between reveal">
+          <div class="col-lg-7">
+            <h2 class="section-title mb-2">Explore Every Way We Care For Your Smile</h2>
+            <p class="section-subtitle">From routine cleanings to full smile makeovers — see our complete range of services, meet the team, and find a plan that fits your budget.</p>
+          </div>
+          <div class="col-lg-4 d-flex flex-wrap gap-3 justify-content-lg-end">
+            <a class="btn btn-outline-brand" href="services.html">View Services</a>
+            <a class="btn btn-outline-brand" href="about.html">Meet the Team</a>
+            <button class="btn btn-primary-solid" type="button" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <span aria-hidden="true" class="brand-mark">
+              <svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C9.5 2 7.6 3.2 6.6 4.6C5.7 5.9 5.4 7.5 5.6 9.3C5.8 11.3 6.5 13.6 7.1 15.6C7.6 17.2 8 18.6 8.5 19.5C8.9 20.3 9.5 21 10.4 21C11.3 21 11.7 20.2 12 19.3C12.3 20.2 12.7 21 13.6 21C14.5 21 15.1 20.3 15.5 19.5C16 18.6 16.4 17.2 16.9 15.6C17.5 13.6 18.2 11.3 18.4 9.3C18.6 7.5 18.3 5.9 17.4 4.6C16.4 3.2 14.5 2 12 2Z" fill="currentColor"></path></svg>
+            </span>
+            <strong style="font-family:var(--font-display); font-size:1.15rem;">SmileCare Dental</strong>
+          </div>
+          <p class="footer-desc">Premium, patient-first dental care in the heart of Austin. Modern technology, gentle hands, honest advice.</p>
+          <div class="footer-social">
+            <a aria-label="Facebook" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+              <svg fill="currentColor" height="16" viewBox="0 0 24 24" width="16"><path d="M13.5 9H15V6.5h-1.8C10.9 6.5 10 7.7 10 9.7V11H8.5v2.5H10V21h2.6v-7.5h1.9l.3-2.5h-2.2V9.9c0-.6.2-.9.9-.9Z"></path></svg>
+            </a>
+            <a aria-label="Instagram" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+              <svg fill="none" height="16" viewBox="0 0 24 24" width="16"><rect height="18" rx="5" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1"></circle></svg>
+            </a>
+            <a aria-label="LinkedIn" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+              <svg fill="currentColor" height="16" viewBox="0 0 24 24" width="16"><path d="M6.9 8.4H3.9V20h3V8.4ZM5.4 4a1.7 1.7 0 1 0 0 3.5A1.7 1.7 0 0 0 5.4 4ZM20.1 20h-3v-6.1c0-1.5-.5-2.5-1.9-2.5-1 0-1.6.7-1.9 1.4-.1.2-.1.6-.1.9V20h-3s.1-10.6 0-11.6h3v1.6c.4-.6 1.1-1.5 2.8-1.5 2 0 3.6 1.3 3.6 4.2V20Z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">General Cleaning</a></li>
+            <li><a href="services.html">Teeth Whitening</a></li>
+            <li><a href="services.html">Braces &amp; Aligners</a></li>
+            <li><a href="services.html">Dental Implants</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5>Newsletter</h5>
+          <p class="footer-desc">Get seasonal dental care tips and clinic updates. No spam, unsubscribe anytime.</p>
+          <form class="d-flex gap-2" data-newsletter-form novalidate>
+            <label class="visually-hidden" for="footerEmail">Email address</label>
+            <input class="form-control form-control-custom" id="footerEmail" placeholder="you@example.com" required="" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.15); color:#fff;" type="email"/>
+            <div style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
+              <label for="footerWebsite">Leave this field empty</label>
+              <input type="text" id="footerWebsite" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+            <button class="btn btn-primary-solid btn-sm" type="submit">Join</button>
+          </form>
+          <p class="d-none mt-2 mb-0" data-newsletter-message style="font-size:0.82rem;"></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear">2026</span> SmileCare Dental. All rights reserved.</span>
+        <span>Registration No. CX-INT-2026-GEN-0131 · Built for CloudExify Internship Project 3</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- ==================== Chat Widget (Tawk.to Placeholder) ====================
+       This is a lightweight UI placeholder that mimics a live-chat widget.
+       To connect a real Tawk.to account, remove this block's markup/JS hooks
+       in script.js and paste your Tawk.to embed snippet before </body>. -->
+  <button class="chat-widget-btn" id="chatWidgetBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open live chat">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.2 0-2.3-.3-3.3-.7L3 21l1.8-5.4a8.4 8.4 0 0 1-1.3-4.6A8.5 8.5 0 0 1 12 2.5a8.5 8.5 0 0 1 9 9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="chat-widget-panel" id="chatWidgetPanel" role="dialog" aria-label="Live chat">
+    <div class="chat-widget-header">
+      <span>Chat with SmileCare</span>
+      <button type="button" id="chatWidgetClose" aria-label="Close chat" style="background:none;border:none;color:#fff;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="chat-widget-body">
+      <p>👋 Hi! This is a placeholder for our live chat widget.</p>
+      <p>Have a question? Call us at <a href="tel:+15125550142" style="color:var(--color-primary); font-weight:600;">(512) 555-0142</a> or book an appointment directly.</p>
+      <button class="btn btn-primary-solid btn-block btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#appointmentModal">Book Appointment</button>
+    </div>
+  </div>
+
+<div aria-hidden="true" aria-labelledby="appointmentModalLabel" class="modal fade" id="appointmentModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h2 class="modal-title" id="appointmentModalLabel">Book Your Appointment</h2>
+          <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+
+          <div id="bookingFormView">
+            <form id="bookingForm" novalidate="">
+              <div id="bookingFormError" class="alert alert-danger d-none" role="alert" style="border-radius:var(--radius-sm); font-size:0.86rem;"></div>
+
+              <!-- Shown only when arriving via a pricing "Choose Plan" offer, so the
+                   patient can see which plan carried through into their booking. -->
+              <div id="bookingPlanBanner" class="d-none mb-3" style="background:rgba(var(--color-primary-rgb),0.08); border:1px solid rgba(var(--color-primary-rgb),0.2); border-radius:var(--radius-sm); padding:10px 14px; font-size:0.86rem; color:var(--color-text);">
+                Booking the <strong id="bookingPlanBannerName">Standard</strong> Plan
+              </div>
+              <input type="hidden" id="patientPlan" name="plan" value="" />
+
+              <!-- Honeypot: hidden from real users via CSS, but visible to most bots that
+                   auto-fill every field. If this has a value, the server rejects the submission. -->
+              <div style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
+                <label for="patientWebsite">Leave this field empty</label>
+                <input type="text" id="patientWebsite" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="mb-3 was-validated-field">
+                <label class="form-label-custom" for="patientName">Patient Name</label>
+                <input class="form-control form-control-custom" id="patientName" placeholder="Jane Doe" required="" type="text"/>
+                <div class="invalid-feedback-custom">Please enter your full name.</div>
+              </div>
+
+              <div class="mb-3 was-validated-field">
+                <label class="form-label-custom" for="patientPhone">Phone Number</label>
+                <input class="form-control form-control-custom" id="patientPhone" placeholder="(512) 555-0123" required="" type="tel"/>
+                <div class="invalid-feedback-custom">Please enter a valid phone number.</div>
+              </div>
+
+              <div class="mb-3 was-validated-field">
+                <label class="form-label-custom" for="patientEmail">Email Address</label>
+                <input class="form-control form-control-custom" id="patientEmail" placeholder="jane@example.com" required="" type="email"/>
+                <div class="invalid-feedback-custom">Please enter a valid email address.</div>
+              </div>
+
+              <div class="row">
+                <div class="col-6 mb-3 was-validated-field">
+                  <label class="form-label-custom" for="patientDate">Preferred Date</label>
+                  <input class="form-control form-control-custom" id="patientDate" required="" type="date"/>
+                  <div class="invalid-feedback-custom">Choose today or later.</div>
+                </div>
+                <div class="col-6 mb-3 was-validated-field">
+                  <label class="form-label-custom" for="patientTime">Preferred Time</label>
+                  <select class="form-select form-select-custom" id="patientTime" required="">
+                    <option disabled="" selected="" value="">Select time</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:30 AM">10:30 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:30 PM">3:30 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                  </select>
+                  <div class="invalid-feedback-custom">Please select a time.</div>
+                </div>
+              </div>
+
+              <div class="mb-4 was-validated-field">
+                <label class="form-label-custom" for="patientService">Service</label>
+                <select class="form-select form-select-custom" id="patientService" required="">
+                  <option disabled="" selected="" value="">Select a service</option>
+                  <option value="general-cleaning">General Cleaning</option>
+                  <option value="teeth-whitening">Teeth Whitening</option>
+                  <option value="braces-aligners">Braces &amp; Aligners</option>
+                  <option value="root-canal">Root Canal</option>
+                  <option value="dental-implants">Dental Implants</option>
+                  <option value="cosmetic-dentistry">Cosmetic Dentistry</option>
+                </select>
+                <div class="invalid-feedback-custom">Please select a service.</div>
+              </div>
+
+              <button class="btn btn-primary-solid btn-block" type="submit">Confirm Appointment</button>
+              <p class="text-center mt-3" style="font-size:0.78rem; color:var(--color-text-soft);">No payment required now. We'll confirm by email &amp; text.</p>
+            </form>
+          </div>
+
+          <div class="booking-success d-none" id="bookingSuccessView">
+            <div aria-hidden="true" class="success-icon">
+              <svg fill="none" height="36" viewBox="0 0 24 24" width="36"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
+            </div>
+            <h3 style="font-size:1.3rem; margin-bottom:8px;">Thanks, <span id="successPatientName">friend</span>!</h3>
+            <p class="mb-4">Your appointment request has been received. Our front desk will confirm your slot by email and text shortly.</p>
+            <button class="btn btn-outline-brand" id="bookAnotherBtn" type="button">Book Another</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/subscribe.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

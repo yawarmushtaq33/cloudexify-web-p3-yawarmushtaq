@@ -1,0 +1,16 @@
+{
+  "name": "smilecare-dental",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SmileCare Dental — premium dental clinic website with Vercel serverless backend for appointments and newsletter subscriptions.",
+  "scripts": {
+    "dev": "vercel dev",
+    "db:init": "node db/init.js"
+  },
+  "dependencies": {
+    "@vercel/postgres": "^0.10.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

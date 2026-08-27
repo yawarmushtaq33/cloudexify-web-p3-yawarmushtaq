@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smilecare-dental.example.com/sitemap.xml
